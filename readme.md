@@ -26,8 +26,10 @@ The result is a video with lip animation imposed on to the original file video f
 ###### Windows 
 *  `copy-checkpoints.bat`
 *  `win-run.bat`
+*  `win-run.bat`
 ###### Mac
 *  `copy-checkpoints.sh`
+*  `mac-run.sh`
 *  `mac-run.sh`
 
 ###### Docker
