@@ -4,12 +4,14 @@ version: '3.8'
 services:
   gradio-app:
     image: arsen3d/audioface_module:latest
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile-dev
     ports:
       - "8001:8000"
       - "5001:5001"
     volumes:
-      - ./src:/app/src
+      - .:/app
     # environment:
     #   - IPFS=QmNNZaVZsrnSmVQqEUZGYotFHCday6eCM8DbiVeVqgXtLe
     command: ["sh", "-c", "./docker-dev.sh"]
