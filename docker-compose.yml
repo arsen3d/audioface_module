@@ -7,5 +7,7 @@ services:
     build: .
     ports:
       - "8001:8000"
-    environment:
-      - IPFS=QmNNZaVZsrnSmVQqEUZGYotFHCday6eCM8DbiVeVqgXtLe
+      - "5001:5001"
+    # environment:
+    #   - IPFS=QmNNZaVZsrnSmVQqEUZGYotFHCday6eCM8DbiVeVqgXtLe
+    # command: ["python", "app.py"]

@@ -23,7 +23,7 @@ import shutil
 # download_ipfs_folder(ipfscid, "inputs")
 
 with gr.Blocks() as demo:
-    gr.Label("Wav2Lip", show_label=False)
+    gr.Label("Audio Face", show_label=False)
     with gr.Row():
         with gr.Column():
             audio_file = gr.File(label="Upload MP3 Audio File" )
@@ -71,8 +71,8 @@ def execute_command(command: str) -> None:
 
 if __name__ == "__main__":
     if os.getenv("IPFS"):
-      download_ipfs_folder(os.getenv("IPFS"), "inputs")
-      generate_lipsync_video("inputs/input2.mpeg", "inputs/input1.png")
+        download_ipfs_folder(os.getenv("IPFS"), "inputs")
+        generate_lipsync_video("inputs/input2.mpeg", "inputs/input1.png")
     else:
         demo.launch( server_port=8000, server_name='0.0.0.0')  
     #   import uvicorn
