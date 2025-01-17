@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     libglib2.0-0 \
     wget \
+    curl \
     && wget https://dist.ipfs.io/kubo/v0.21.0/kubo_v0.21.0_linux-amd64.tar.gz \
     && tar -xvzf kubo_v0.21.0_linux-amd64.tar.gz \
     && cd kubo \
@@ -22,5 +23,6 @@ COPY src/ .
 
 # CMD ["python", "."]
 # RUN ipfs init
-
-CMD ["sh", "-c", "ipfs init && ipfs daemon & sleep 5 && python ."]
+COPY docker.sh .
+COPY docker-dev.sh .
+CMD ["sh", "-c", "./docker.sh"]
