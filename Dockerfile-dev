@@ -19,10 +19,10 @@ COPY requirements.txt .
 RUN pip install uv
 RUN uv pip install --no-cache-dir -r requirements.txt --system
 
-COPY src/ .
+# COPY src/ .
 
 # CMD ["python", "."]
 # RUN ipfs init
 COPY docker.sh .
 COPY docker-dev.sh .
-CMD ["sh", "-c", "./docker.sh"]
+# CMD ["sh", "-c", "./docker-dev.sh"]

@@ -2,33 +2,22 @@
 --extra-index-url https://pypi.ngc.nvidia.com
 --find-links https://download.pytorch.org/whl/torch_stable.html
 
-# numb
+ 
 future
 librosa 
 lmdb
-# numb 
 numpy==1.26.4
 opencv-contrib-python>=4.2.0.34
 opencv-python
 Pillow
 pyyaml
-# requests
 scikit-image
 scipy
 tb-nightly
-# torch==2.2.2
-# torchvision==0.17.2
-# torchaudio
-# torch 
-# torchvision 
-# torchaudio 
 torch==2.2.2+cu121 
 torchvision==0.17.2+cu121
 torchaudio==2.2.2+cu121 
 tqdm
 yapf
 gradio==4.44.1
-
-
-# pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-# --extra-index-url https://pypi.ngc.nvidia.com
+watchdog
