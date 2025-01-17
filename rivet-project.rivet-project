@@ -1,0 +1,55 @@
+version: 4
+data:
+  attachedData:
+    trivet:
+      testSuites: []
+      version: 1
+  graphs:
+    dgh450CF2JAfGfvva0lSG:
+      metadata:
+        description: ""
+        id: dgh450CF2JAfGfvva0lSG
+        name: Untitled Graph
+      nodes:
+        '[MNwxmoccSzZXPRqtkrsua]:audio "Audio"':
+          data:
+            data:
+              refId: ZkBgHSayoAhZPxFX6Vhyz
+            mediaType: audio/mpeg
+            useDataInput: false
+            useMediaTypeInput: false
+          outgoingConnections:
+            - data->"Lilypad Audio Face Module" NeT_AUxsBDm1C6rqZXJSW/input1
+          visualData: 350.32400831673516/811.6295813799802/330/80//
+        '[NeT_AUxsBDm1C6rqZXJSW]:modulePlugin "Lilypad Audio Face Module"':
+          data:
+            binary_path: outputs/output.mp4
+            id: NeT_AUxsBDm1C6rqZXJSW
+            input: prompt=cow
+            module: github.com/arsen3d/audioface_module:main
+            useSomeDataInput: false
+            useipfsInput: true
+          visualData: 833.8913355587111/1074.6286101838705/230/79//
+        '[r0xYQ73vl85qxgEJksbnO]:image "Image"':
+          data:
+            data:
+              refId: 83EhA-t1l--XY1PA6g43K
+            mediaType: image/png
+            useDataInput: false
+            useMediaTypeInput: false
+          outgoingConnections:
+            - image->"Lilypad Audio Face Module" NeT_AUxsBDm1C6rqZXJSW/input2
+          visualData: 355.87352248430864/1081.8154531402727/280/81//
+  metadata:
+    description: ""
+    id: YCZJ_F5wLjcO5xUREYp9u
+    title: test142
+  plugins:
+    - id: lp@latest
+      package: lp
+      tag: latest
+      type: package
+    - id: rivet-plugin-pdf2md@latest
+      package: rivet-plugin-pdf2md
+      tag: latest
+      type: package
