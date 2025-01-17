@@ -44,7 +44,7 @@ This project is comprised of several key components.
 
 
 #### Workflow
-Best place to start is by installing the Rivet App with Rivet Lilypad Plugin. This provides an easy interface for experimenting with your own custom workflows. To test just
+Best place to start is by installing the Rivet App with Rivet Lilypad Plugin. This provides an easy interface for experimenting with your own custom workflows. 
 
 #### GUI Tools
 ##### Rivet
