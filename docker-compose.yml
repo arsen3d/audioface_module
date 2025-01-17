@@ -1,0 +1,11 @@
+# filepath: /c:/Users/arsen/repos/audioface_module/docker-compose.yml
+version: '3.8'
+
+services:
+  gradio-app:
+    image: arsen3d/audioface_module:latest
+    build: .
+    ports:
+      - "8001:8000"
+    environment:
+      - IPFS=QmNNZaVZsrnSmVQqEUZGYotFHCday6eCM8DbiVeVqgXtLe

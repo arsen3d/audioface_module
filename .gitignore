@@ -1,0 +1,7 @@
+.conda
+.vscode
+/inputs
+/src/inputs
+/src/temp
+__pycache__
+src/checkpoints

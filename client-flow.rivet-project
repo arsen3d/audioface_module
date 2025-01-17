@@ -1,0 +1,71 @@
+version: 4
+data:
+  attachedData:
+    trivet:
+      testSuites: []
+      version: 1
+  graphs:
+    dgh450CF2JAfGfvva0lSG:
+      metadata:
+        description: ""
+        id: dgh450CF2JAfGfvva0lSG
+        name: Untitled Graph
+      nodes:
+        '[MNwxmoccSzZXPRqtkrsua]:audio "Audio"':
+          data:
+            data:
+              refId: ZkBgHSayoAhZPxFX6Vhyz
+            mediaType: audio/mpeg
+            useDataInput: false
+            useMediaTypeInput: false
+          outgoingConnections:
+            - data->"Ipfs" PdeCi1_KyghgBGeLRRM2Y/input2
+            - data->"Module" NeT_AUxsBDm1C6rqZXJSW/input1
+          visualData: 253.48717948717945/1048.128205128205/330/52//
+        '[NeT_AUxsBDm1C6rqZXJSW]:modulePlugin "Module"':
+          data:
+            binary_path: outputs/output.png
+            id: NeT_AUxsBDm1C6rqZXJSW
+            input: prompt=cow
+            module: github.com/noryev/module-sdxl-ipfs:ae17e969cadab1c53d7cabab1927bb403f02fd2a
+            useSomeDataInput: false
+            useipfsInput: true
+          outgoingConnections:
+            - binary->"Image" yLwTml8-ItZ2APUx0lJtD/data
+          visualData: 1073/975/230/60//
+        '[PdeCi1_KyghgBGeLRRM2Y]:ipfsPlugin "Ipfs"':
+          data:
+            SK: ""
+            id: PdeCi1_KyghgBGeLRRM2Y
+            someData: Hello World From LP!!!
+          visualData: 1070.4102564102564/616.1794871794871/430/45//
+        '[r0xYQ73vl85qxgEJksbnO]:image "Image"':
+          data:
+            data:
+              refId: 83EhA-t1l--XY1PA6g43K
+            mediaType: image/png
+            useDataInput: false
+            useMediaTypeInput: false
+          outgoingConnections:
+            - image->"Ipfs" PdeCi1_KyghgBGeLRRM2Y/input1
+            - image->"Module" NeT_AUxsBDm1C6rqZXJSW/input2
+          visualData: 269.28205128205127/590.5384615384614/280/51//
+        '[yLwTml8-ItZ2APUx0lJtD]:image "Image"':
+          data:
+            mediaType: image/png
+            useDataInput: true
+            useMediaTypeInput: false
+          visualData: 1491/1040/280/61//
+  metadata:
+    description: ""
+    id: YCZJ_F5wLjcO5xUREYp9u
+    title: test142
+  plugins:
+    - id: lp@latest
+      package: lp
+      tag: latest
+      type: package
+    - id: rivet-plugin-pdf2md@latest
+      package: rivet-plugin-pdf2md
+      tag: latest
+      type: package
