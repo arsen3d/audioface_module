@@ -23,7 +23,7 @@ import shutil
 # download_ipfs_folder(ipfscid, "inputs")
 
 with gr.Blocks() as demo:
-    gr.Label("Audio Face", show_label=False)
+    gr.Label("Audio Face!!", show_label=False)
     with gr.Row():
         with gr.Column():
             audio_file = gr.File(label="Upload MP3 Audio File" )

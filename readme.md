@@ -25,10 +25,10 @@ The result is a video with lip animation imposed on to the original file video f
 
 ###### Windows 
 *  `copy-checkpoints.bat`
-*  `run.bat`
+*  `win-run.bat`
 ###### Mac
 *  `copy-checkpoints.sh`
-*  `run.sh`
+*  `mac-run.sh`
 
 ###### Docker
 *  `docker-compose up`
@@ -44,7 +44,9 @@ This project is comprised of several key components.
 
 
 #### Workflow
-Best place to start is by installing the Rivet App with Rivet Lilypad Plugin. This provides an easy interface for experimenting with your own custom workflows. To test just
+Best place to start is by installing the Rivet App with Rivet Lilypad Plugin. This provides an easy interface for experimenting with your own custom workflows. 
+
+To be clear, Gradio and Rivet are intended as visual support and test tools to build the Lilypad Moduls.
 
 #### GUI Tools
 ##### Rivet
