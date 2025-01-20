@@ -27,13 +27,20 @@ The result is a video with lip animation imposed on to the original file video f
 *  `copy-checkpoints.bat`
 *  `win-run.bat`
 ###### Mac
-*  `copy-checkpoints.sh`
-*  `mac-run.sh`
+*  `./copy-checkpoints.sh`
+*  `./mac-run.sh`
+
+###### Docker Mounted to host FS
+*  `docker-compose -f docker-compose-dev.yml up`
+*  open in browser `http://localhost:8001`
 
 ###### Docker
 *  `docker-compose up`
 *  open in browser `http://localhost:8001`
 
+
+
+docker-compose -f {file_name} up
 #### How it works
 This project is comprised of several key components.
 * Lilypad Module - For defining how this process would run on Lilypad Network
@@ -43,7 +50,7 @@ This project is comprised of several key components.
 * Developer Dashboard / Faucet(Optional) - used to get a secret key for api. 
 
 
-#### Workflow
+###### Workflow
 Best place to start is by installing the Rivet App with Rivet Lilypad Plugin. This provides an easy interface for experimenting with your own custom workflows. 
 
 
