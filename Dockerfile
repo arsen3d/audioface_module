@@ -6,11 +6,11 @@ RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     wget \
     curl \
-    && wget https://dist.ipfs.io/kubo/v0.21.0/kubo_v0.21.0_linux-amd64.tar.gz \
-    && tar -xvzf kubo_v0.21.0_linux-amd64.tar.gz \
+    && wget https://dist.ipfs.io/kubo/v0.32.1/kubo_v0.32.1_linux-amd64.tar.gz \
+    && tar -xvzf kubo_v0.32.1_linux-amd64.tar.gz \
     && cd kubo \
     && bash install.sh \
-    && rm -rf kubo_v0.21.0_linux-amd64.tar.gz \
+    && rm -rf kubo_v0.32.1_linux-amd64.tar.gz \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
