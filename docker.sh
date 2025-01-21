@@ -6,5 +6,5 @@
     until curl -s http://127.0.0.1:5001/webui > /dev/null; do
         sleep 1
     done
-    python .
+    python __main__.py
     # ipfs init && ipfs daemon & sleep 5 && python .
